@@ -1,0 +1,3 @@
+export const EMAIL_TYPES = {
+    ACCOUNT_ACTIVATION: "ACCOUNT_ACTIVATION",
+};
