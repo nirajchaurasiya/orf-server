@@ -393,7 +393,7 @@ const updateAccountDetails = asyncHandler(async (req, res) => {
             // government image is stored privately
             govermentImgURL = await uploadToSpaces(
                 govermentImgPath,
-                `private_docs/${govermentImg.mimetype}`,
+                `users/private_docs/${govermentImg.mimetype}`,
                 process.env.SPACES_ACL_PRIVATE
             );
         }
@@ -401,7 +401,7 @@ const updateAccountDetails = asyncHandler(async (req, res) => {
         // avatar is required and is public
         const avatarURL = await uploadToSpaces(
             avatarLocalPath,
-            `public/${avatarFile.mimetype}`,
+            `users/public/${avatarFile.mimetype}`,
             process.env.SPACES_ACL_PUBLIC
         );
 
