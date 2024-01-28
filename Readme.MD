@@ -1,1 +1,1 @@
-### Backend app for our online room finder app
+### Backend app for online room finder app
